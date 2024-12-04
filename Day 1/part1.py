@@ -26,7 +26,7 @@ for line in lines:
     list1.append(int(num1))
     list2.append(int(num2))
 
-sum = 0
+distance = 0
 
 list1.sort()
 list2.sort()
@@ -34,9 +34,9 @@ list2.sort()
 for i in range(len(list1)):
     id1 = list1.pop()
     id2 = list2.pop()
-    sum += abs(id1 - id2)
+    distance += abs(id1 - id2)
 
 input.close()
 output = open("output1.txt", 'w')
-output.write(str(sum))
+output.write(str(distance))
 output.close()
